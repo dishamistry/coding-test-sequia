@@ -26,3 +26,20 @@ function saveCurrencyConversionToCsv($amount, $from, $to, $convertedAmount, $fil
     fputcsv($f, $inputArray);
     fclose($f);
 }
+
+function csvToArray($filename)
+{
+        $data = array();
+        if (!file_exists($filename))
+            return $data;
+
+        $f = fopen($filename, 'r');
+        if ($f === false)
+            die('Cannot open the file ' . $filename);
+
+        while (($row = fgetcsv($f)) !== false) {
+            array_push($data, $row);
+        }
+        fclose($f);
+        return $data;
+}
