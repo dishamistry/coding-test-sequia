@@ -1,27 +1,31 @@
 <?php
 
-// 1 Australian Dollar compared with other currencies
+return [
 
-return[
+    // 1 Australian Dollar compared with other currencies
 
-    'USD' => [
-        'code' => 'USD',
-        'rate' => 1.5,
-    ],
+    'currencyRates' => [
 
-    'NZD' => [
-        'code' => 'NZD',
-        'rate' => 0.9,
-    ],
+        'USD' => [
+            'code' => 'USD',
+            'rate' => 1.5,
+        ],
 
-    'GBP' => [
-        'code' => 'GBP',
-        'rate' => 1.7,
-    ],
+        'NZD' => [
+            'code' => 'NZD',
+            'rate' => 0.9,
+        ],
 
-    'EUR' => [
-        'code' => 'EUR',
-        'rate' => 1.5,
-    ],
+        'GBP' => [
+            'code' => 'GBP',
+            'rate' => 1.7,
+        ],
+
+        'EUR' => [
+            'code' => 'EUR',
+            'rate' => 1.5,
+        ]
+
+    ]
 
 ];
